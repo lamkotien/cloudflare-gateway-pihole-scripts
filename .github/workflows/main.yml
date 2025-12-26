@@ -20,11 +20,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
-          repository: "mrrfv/cloudflare-gateway-pihole-scripts"
-          ref: main
-          path: .
+          fetch-depth: 0
 
       - name: Install Node.js
         uses: actions/setup-node@v6
