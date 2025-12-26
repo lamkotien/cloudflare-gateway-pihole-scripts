@@ -20,7 +20,7 @@ jobs:
           ref: main
       - uses: connor-baer/action-sync-branch@v2.0.1
         with:
-          branch: v1
+          branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
           # Force push is enabled since v1 is supposed to be an exact copy of main until breaking changes are made
           force: true
